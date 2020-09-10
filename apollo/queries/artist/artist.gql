@@ -1,0 +1,11 @@
+query Artist ($name: String!){
+    artists ( where:{ name: $name} ){
+    	name
+    	jp_name
+        youtube
+        spotify
+        image{
+            url
+        }
+    }
+}

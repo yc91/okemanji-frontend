@@ -1,0 +1,9 @@
+query {
+  tracks {
+    title
+    artists{
+    	name
+    	jp_name
+    }
+  }
+}

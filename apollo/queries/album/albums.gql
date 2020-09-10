@@ -1,0 +1,12 @@
+query Album{
+    albums{
+    	name
+        image{
+            url
+        },
+        artists{
+	    	name
+	    	jp_name
+    	}
+    }
+}

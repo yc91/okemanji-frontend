@@ -1,0 +1,11 @@
+.white-space-pre {
+  white-space: pre-line;
+}
+
+.cursor-pointer{
+	cursor:pointer;
+}
+
+.white-bg{
+	background-color: #fff;
+}

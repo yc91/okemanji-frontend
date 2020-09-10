@@ -1,0 +1,9 @@
+query Artist{
+    artists{
+    	name
+    	jp_name
+        image{
+            url
+        }
+    }
+}

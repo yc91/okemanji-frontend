@@ -1,0 +1,15 @@
+query Albums ($title: String!, $name: String!){
+  albums(where:{ name: $title, artists: {name: $name} }) {
+    name
+    image{
+        url
+    },
+    artists{
+    	name
+    	jp_name
+    },
+    tracks{
+        title
+    }
+  }
+}
