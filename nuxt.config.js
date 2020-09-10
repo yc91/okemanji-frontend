@@ -1,6 +1,9 @@
 export default {
+  server: {
+    host: '0.0.0.0', // default: localhost
+  },
   env: {
-    endPointUrl: process.env.ENDPOINT_URL || 'http://localhost:1337',
+    endPointUrl: process.env.ENDPOINT_URL || 'http://54.251.196.103:1337',
   },
   /*
    ** Nuxt rendering mode
@@ -70,7 +73,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost:1337/graphql',
+        httpEndpoint: 'http://54.251.196.103:1337/graphql',
       },
     },
   },

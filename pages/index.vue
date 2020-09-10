@@ -42,7 +42,7 @@
   </div>
 </template>
 <script>
-import last10Tracks from '~/apollo/queries/track/last10Tracks'
+import last10Tracks from '~/apollo/queries/track/last10tracks'
 
 export default {
   data() {
