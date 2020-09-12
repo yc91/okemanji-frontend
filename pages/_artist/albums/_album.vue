@@ -25,7 +25,7 @@
         <table class="uk-table uk-table-divider">
           <thead>
             <tr>
-              <th class="uk-text-primary">Track</th>
+              <th>Track</th>
             </tr>
           </thead>
           <tbody>

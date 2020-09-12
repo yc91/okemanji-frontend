@@ -9,8 +9,8 @@
           href="#"
         ></a>
       </div>
-      <div class="nav-overlay uk-navbar-center">
-        <img data-src="/images/icon.jpg" width="150" uk-img />
+      <div class="nav-overlay uk-navbar-center uk-margin-small-top">
+        <img data-src="/images/icon.png" width="300" uk-img />
       </div>
       <div class="uk-navbar-right">
         <a
@@ -47,9 +47,6 @@
           <ul class="uk-nav">
             <li>
               <a class="uk-text-large" href="/">Home</a>
-            </li>
-            <li>
-              <a class="uk-text-large" href="#">About</a>
             </li>
             <li>
               <a class="uk-text-large" href="/artists">Artists</a>

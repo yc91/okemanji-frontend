@@ -28,7 +28,7 @@
             <li><a href="#" v-if="tracks[0].jp_lyrics">Japanese</a></li>
             <li><a href="#" v-if="tracks[0].romaji_lyrics">Romaji</a></li>
           </ul>
-          <ul class="uk-switcher uk-margin white-space-pre">
+          <ul class="uk-switcher uk-margin white-space-pre p-20">
             <li v-if="tracks[0].eng_lyrics" v-html="tracks[0].eng_lyrics"></li>
             <li v-if="tracks[0].jp_lyrics" v-html="tracks[0].jp_lyrics"></li>
             <li
