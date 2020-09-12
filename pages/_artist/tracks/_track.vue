@@ -12,7 +12,7 @@
                 {{ tracks[0].title }}
               </h3>
               <p
-                class="uk-text-meta uk-margin-remove-top"
+                class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom"
                 v-for="(artist, key) in tracks[0].artists"
                 v-bind:key="key"
               >

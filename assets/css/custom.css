@@ -9,3 +9,14 @@
 .white-bg{
 	background-color: #fff;
 }
+
+.right-line{
+	border-bottom: 1px solid white;
+    padding-left: 10rem;
+}
+
+@media screen and (max-width: 495px) {
+  .right-line {
+    margin-top:10px;
+  }
+}

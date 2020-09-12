@@ -9,10 +9,10 @@
           <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-auto">
               <img
-                class="uk-border-circle"
+                :data-src="artists[0].image.url"
                 width="150"
                 height="150"
-                :src="endPointUrl + artists[0].image.url"
+                uk-img
               />
             </div>
             <div class="uk-width-expand">

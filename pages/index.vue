@@ -3,13 +3,13 @@
     <client-only>
       <div class="uk-section">
         <div class="uk-container">
-          <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+          <div class="uk-card uk-card-secondary uk-card-hover uk-card-body">
             <h3 class="uk-text-center">Recently Added Tracks</h3>
             <table class="uk-table uk-table-divider">
               <thead>
                 <tr>
-                  <th class="uk-text-primary">Track Title</th>
-                  <th class="uk-text-primary">Artist Name</th>
+                  <th>Track Title</th>
+                  <th>Artist Name</th>
                 </tr>
               </thead>
               <tbody>

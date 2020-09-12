@@ -7,8 +7,8 @@
           uk-grid
         >
           <div class="uk-card-media-left uk-cover-container">
-            <img :src="endPointUrl + albums[0].image.url" alt="" uk-cover />
-            <canvas width="300" height="300"></canvas>
+            <img :src="albums[0].image.url" alt="" uk-cover />
+            <canvas width="600" height="400"></canvas>
           </div>
           <div>
             <div class="uk-card-body">

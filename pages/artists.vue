@@ -3,7 +3,7 @@
     <client-only>
       <div class="uk-section">
         <div class="uk-container">
-          <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+          <div class="uk-card">
             <h3 class="uk-text-center">Artists</h3>
             <List datatype="artist" />
           </div>
