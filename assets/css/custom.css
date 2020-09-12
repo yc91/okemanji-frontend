@@ -28,3 +28,7 @@
 .uk-card-title{
 	overflow-wrap: break-word;
 }
+
+.header-spacing{
+	letter-spacing: 4px;
+}

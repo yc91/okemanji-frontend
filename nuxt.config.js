@@ -35,7 +35,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Quicksand&display=swap',
+          'https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat&display=swap',
       },
     ],
   },

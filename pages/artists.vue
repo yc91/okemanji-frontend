@@ -1,10 +1,10 @@
 <template>
   <div>
     <client-only>
-      <div class="uk-section">
+      <div>
         <div class="uk-container">
           <div class="uk-card">
-            <h3 class="uk-text-center">Artists</h3>
+            <h3 class="uk-text-center header-spacing">Artists</h3>
             <List datatype="artist" />
           </div>
         </div>

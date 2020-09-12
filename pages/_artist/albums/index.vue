@@ -1,10 +1,10 @@
 <template>
   <div>
     <client-only>
-      <div class="uk-section">
+      <div>
         <div class="uk-container">
           <div class="uk-card">
-            <h3 class="uk-text-center">Albums</h3>
+            <h3 class="uk-text-center header-spacing">Albums</h3>
             <ListOne datatype="album" />
           </div>
         </div>

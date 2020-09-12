@@ -1,9 +1,11 @@
 <template>
   <div>
     <client-only>
-      <div class="uk-section">
+      <div>
         <div class="uk-container">
-          <h3 class="uk-text-center">Explore more of the site here</h3>
+          <h3 class="uk-text-center header-spacing">
+            Explore more of the site here
+          </h3>
           <div
             class="uk-child-width-1-3@m uk-margin-remove uk-grid-margin uk-grid-small uk-grid-match"
             uk-grid
@@ -47,7 +49,7 @@
             class="uk-card uk-card-secondary uk-card-hover uk-card-body"
             style="margin-left: 16px"
           >
-            <h3 class="uk-text-center">Recently Added Tracks</h3>
+            <h3 class="uk-text-center header-spacing">Recently Added Tracks</h3>
             <table class="uk-table uk-table-divider">
               <thead>
                 <tr>
