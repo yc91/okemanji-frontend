@@ -12,6 +12,7 @@
       <div class="nav-overlay uk-navbar-center uk-margin-small-top">
         <img
           data-src="/images/icon.png"
+          class="cursor-pointer"
           width="300"
           uk-img
           @click="$router.push({ path: '/' })"

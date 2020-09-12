@@ -19,6 +19,23 @@
                 {{ artist.name }}
                 <span v-if="artist.jp_name">/{{ artist.jp_name }}</span>
               </p>
+              <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <label
+                  ><input
+                    class="uk-checkbox"
+                    type="checkbox"
+                    v-model="showYt"
+                    checked
+                  />Show Youtube</label
+                >
+                <label v-if="showYt && tracks[0].off_vocal_youtube !== ''"
+                  ><input
+                    class="uk-checkbox uk-margin-small-right"
+                    v-model="vocal"
+                    type="checkbox"
+                  />Vocal</label
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -36,6 +53,24 @@
               v-html="tracks[0].romaji_lyrics"
             ></li>
           </ul>
+          <div class="youtube-embed" v-show="showYt">
+            <div v-if="vocal">
+              <iframe
+                :src="tracks[0].youtube"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div v-else>
+              <iframe
+                :src="tracks[0].off_vocal_youtube"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </client-only>
@@ -47,7 +82,10 @@ import trackQuery from '~/apollo/queries/track/track'
 
 export default {
   data() {
-    return {}
+    return {
+      showYt: true,
+      vocal: true,
+    }
   },
   apollo: {
     tracks: {

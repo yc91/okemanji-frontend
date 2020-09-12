@@ -32,3 +32,15 @@
 .header-spacing{
 	letter-spacing: 4px;
 }
+
+.youtube-embed{
+	position: fixed;
+    top: 17vh;
+    right: 19%;
+}
+
+@media screen and (max-width: 768px) {
+  .youtube-embed {
+    display:none;
+  }
+}

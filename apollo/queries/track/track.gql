@@ -1,13 +1,14 @@
-query Tracks ($title: String!, $name: String!){
-  tracks(where:{ title: $title, artists: {name: $name} }) {
+query Tracks($title: String!, $name: String!) {
+  tracks(where: { title: $title, artists: { name: $name } }) {
     title
     eng_lyrics
     romaji_lyrics
     jp_lyrics
     youtube
-    artists{
-    	name
-    	jp_name
+    off_vocal_youtube
+    artists {
+      name
+      jp_name
     }
   }
 }
