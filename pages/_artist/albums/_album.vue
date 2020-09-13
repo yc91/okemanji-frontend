@@ -14,7 +14,7 @@
             <div class="uk-card-body">
               <h3 class="uk-card-title">{{ albums[0].name }}</h3>
               <a
-                class="uk-text-meta"
+                class="uk-text-meta uk-link"
                 href="#"
                 @click="$router.push({ path: '/' + albums[0].artists.name })"
               >

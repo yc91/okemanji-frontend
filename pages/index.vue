@@ -7,7 +7,7 @@
             Explore more of the site here
           </h3>
           <div
-            class="uk-child-width-1-3@m uk-margin-remove uk-grid-margin uk-grid-small uk-grid-match"
+            class="uk-child-width-1-3@m uk-margin-remove uk-grid-margin uk-grid-small uk-grid-match categories"
             uk-grid
           >
             <div v-for="(card, key) in explore" v-bind:key="key">

@@ -44,3 +44,43 @@
     display:none;
   }
 }
+
+#sidenav .uk-nav .material-icons{
+  position:relative;
+  top:2px;
+}
+
+#sidenav .uk-nav li{
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#sidenav .uk-nav li:hover{
+  opacity: 1;
+  background-color:#595c67;
+}
+
+.uk-link, .uk-table a, .categories h3, .uk-navbar-toggle{
+  transition: 0.3s;
+}
+
+.categories h4{
+  color:#ffa600 !important;
+}
+
+.uk-active a{
+  color:#ffa600 !important;
+}
+
+.uk-link:hover, .uk-navbar-toggle:hover, .uk-table a:hover, .categories h3:hover, #sidenav .uk-nav li:hover .material-icons{
+  color:#ffa600 !important;
+}
+
+
+
+::selection {
+  background: #ffa60075; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffa60075; /* Gecko Browsers */
+}

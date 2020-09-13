@@ -26,7 +26,7 @@
         <div class="uk-card-body">
           <p>
             <a
-              class="uk-button uk-button-text"
+              class="uk-button uk-button-text uk-link"
               :href="artists[0].youtube"
               target="_blank"
               >Youtube</a
@@ -34,7 +34,7 @@
           </p>
           <p>
             <a
-              class="uk-button uk-button-text"
+              class="uk-button uk-button-text uk-link"
               :href="artists[0].spotify"
               target="_blank"
               >Spotify</a
@@ -43,12 +43,20 @@
         </div>
         <div class="uk-card-footer">
           <p>
-            <router-link to="albums" class="uk-button uk-button-text" append>
+            <router-link
+              to="albums"
+              class="uk-button uk-button-text uk-link"
+              append
+            >
               View Albums
             </router-link>
           </p>
           <p>
-            <router-link to="tracks" class="uk-button uk-button-text" append>
+            <router-link
+              to="tracks"
+              class="uk-button uk-button-text uk-link"
+              append
+            >
               View Tracks
             </router-link>
           </p>

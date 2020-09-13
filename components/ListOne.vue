@@ -47,7 +47,7 @@
           <p
             v-else-if="data.artists"
             class="uk-link"
-            @click="navigateTo(data, artists.name)"
+            @click="navigateTo(data, data.artists.name)"
           >
             {{ data.artists.name }}
             <span v-if="data.artists.jp_name">/{{ data.artists.jp_name }}</span>

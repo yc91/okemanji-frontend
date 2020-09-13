@@ -12,9 +12,10 @@
                 {{ tracks[0].title }}
               </h3>
               <p
-                class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom"
+                class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom uk-link"
                 v-for="(artist, key) in tracks[0].artists"
                 v-bind:key="key"
+                @click="$router.push({ path: '/' + artist.name })"
               >
                 {{ artist.name }}
                 <span v-if="artist.jp_name">/{{ artist.jp_name }}</span>
@@ -41,16 +42,25 @@
         </div>
         <div class="uk-card-body uk-padding-small">
           <ul uk-tab>
+            <li><a href="#" v-if="tracks[0].romaji_lyrics">Romaji</a></li>
             <li><a href="#" v-if="tracks[0].eng_lyrics">English</a></li>
             <li><a href="#" v-if="tracks[0].jp_lyrics">Japanese</a></li>
-            <li><a href="#" v-if="tracks[0].romaji_lyrics">Romaji</a></li>
           </ul>
           <ul class="uk-switcher uk-margin white-space-pre p-20">
-            <li v-if="tracks[0].eng_lyrics" v-html="tracks[0].eng_lyrics"></li>
-            <li v-if="tracks[0].jp_lyrics" v-html="tracks[0].jp_lyrics"></li>
             <li
+              class="uk-animation-fade"
               v-if="tracks[0].romaji_lyrics"
               v-html="tracks[0].romaji_lyrics"
+            ></li>
+            <li
+              class="uk-animation-fade"
+              v-if="tracks[0].eng_lyrics"
+              v-html="tracks[0].eng_lyrics"
+            ></li>
+            <li
+              class="uk-animation-fade"
+              v-if="tracks[0].jp_lyrics"
+              v-html="tracks[0].jp_lyrics"
             ></li>
           </ul>
           <div class="youtube-embed" v-show="showYt">

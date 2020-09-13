@@ -9,7 +9,10 @@
           href="#"
         ></a>
       </div>
-      <div class="nav-overlay uk-navbar-center uk-margin-small-top">
+      <div
+        class="nav-overlay uk-navbar-center uk-margin-small-top"
+        style="z-index: 1"
+      >
         <img
           data-src="/images/icon.png"
           class="cursor-pointer"
@@ -49,37 +52,44 @@
         ></a>
       </div>
       <div id="sidenav" uk-offcanvas="mode: push" class="uk-offcanvas">
-        <div class="uk-offcanvas-bar">
-          <ul class="uk-nav">
-            <li>
+        <div class="uk-offcanvas-bar uk-padding-remove">
+          <ul class="uk-nav uk-margin-medium-top">
+            <li class="uk-padding">
               <a
                 class="uk-text-large"
                 href="#"
                 @click="$router.push({ path: '/' })"
+                ><span class="material-icons uk-margin-small-right"> home </span
                 >Home</a
               >
             </li>
-            <li>
+            <li class="uk-padding">
               <a
                 class="uk-text-large"
                 href="#"
                 @click="$router.push({ path: '/artists' })"
+                ><span class="material-icons uk-margin-small-right">
+                  record_voice_over </span
                 >Artists</a
               >
             </li>
-            <li>
+            <li class="uk-padding">
               <a
                 class="uk-text-large"
                 href="#"
                 @click="$router.push({ path: '/albums' })"
+                ><span class="material-icons uk-margin-small-right">
+                  library_music </span
                 >Albums</a
               >
             </li>
-            <li>
+            <li class="uk-padding">
               <a
                 class="uk-text-large"
                 href="#"
                 @click="$router.push({ path: '/tracks' })"
+                ><span class="material-icons uk-margin-small-right">
+                  album </span
                 >Tracks</a
               >
             </li>
