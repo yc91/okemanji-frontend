@@ -13,7 +13,11 @@
           <div>
             <div class="uk-card-body">
               <h3 class="uk-card-title">{{ albums[0].name }}</h3>
-              <a class="uk-text-meta" :href="'/' + albums[0].artists.name">
+              <a
+                class="uk-text-meta"
+                href="#"
+                @click="$router.push({ path: '/' + albums[0].artists.name })"
+              >
                 {{ albums[0].artists.name }}
                 <span v-if="albums[0].artists.jp_name"
                   >/{{ albums[0].artists.jp_name }}</span
@@ -32,8 +36,12 @@
             <tr v-for="(track, key) in albums[0].tracks" v-bind:key="key">
               <td>
                 <a
-                  :href="
-                    '/' + albums[0].artists.name + '/tracks/' + track.title
+                  href="#"
+                  @click="
+                    $router.push({
+                      path:
+                        '/' + albums[0].artists.name + '/tracks/' + track.title,
+                    })
                   "
                   >{{ track.title }}</a
                 >

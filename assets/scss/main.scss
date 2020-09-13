@@ -2,8 +2,8 @@
 $global-background:                              #221F28;
 $global-secondary-background:                    #3d3f45;
 $global-primary-background:                      #4756B5;
-$table-row-active-background: 					 #DCF763;
-$global-muted-color: 							 #f9f9fa;
+$table-row-active-background: 					         #DCF763;
+$global-muted-color: 							               #f9f9fa;
 $global-color:                                   #f9f9fa;
 $global-link-color:                              #f9f9fa;
 $global-link-hover-color:                        #f9f9fa;
@@ -12,6 +12,8 @@ $global-emphasis-color: 						 #f9f9fa;
 $base-heading-font-family: 						 'Bungee', cursive;
 $global-font-family: 							 'Montserrat', sans-serif;
 $navbar-nav-item-font-family: 					 'Bungee', cursive;
+$t-duration: 800ms;
+$t-delay: 300ms;
 
 // 2. Import default variables and available mixins.
 @import "~uikit/src/scss/variables-theme.scss";
@@ -19,6 +21,85 @@ $navbar-nav-item-font-family: 					 'Bungee', cursive;
 
 // 3. Your custom mixin overwrites.
 //@mixin hook-card() { color: #000; }
+.page-enter-active,
+.page-leave-active {
+  transition-duration: $t-duration * 2;
+
+  &::before,
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 50%;
+    transition-property: opacity, transform;
+    transition-timing-function: ease-in-out;
+  }
+
+  &::before {
+    background-color: $global-secondary-background;
+  }
+
+  &::after {
+    top: 50%;
+    background-color: $global-secondary-background;
+  }
+}
+
+.page-leave {
+  &::before,
+  &::after {
+    transform: scaleX(0);
+  }
+}
+
+.page-leave-active {
+  &::before {
+    transition-duration: $t-duration;
+  }
+
+  &::after {
+    transition-duration: $t-duration - $t-delay;
+    transition-delay: $t-delay;
+  }
+}
+
+.page-leave-to {
+  &::before,
+  &::after {
+    transform: scale(1);
+    transform-origin: left;
+  }
+}
+
+.page-enter {
+  &::before,
+  &::after {
+    transform: scaleX(1);
+  }
+}
+
+.page-enter-active {
+  &::before {
+    transition-duration: $t-duration;
+  }
+
+  &::after {
+    transition-duration: $t-duration - $t-delay;
+    transition-delay: $t-delay;
+  }
+}
+
+.page-enter-to {
+  &::before,
+  &::after {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
 
 // 4. Import UIkit.
 @import "~uikit/src/scss/uikit-theme.scss";

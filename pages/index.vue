@@ -61,15 +61,29 @@
                 <tr v-for="track in tracks" v-bind:key="track.id">
                   <td>
                     <a
-                      :href="
-                        '/' + track.artists[0].name + '/tracks/' + track.title
+                      href="#"
+                      @click="
+                        $router.push({
+                          path:
+                            '/' +
+                            track.artists[0].name +
+                            '/tracks/' +
+                            track.title,
+                        })
                       "
                       >{{ track.title }}</a
                     >
                   </td>
                   <td>
                     <p v-for="(artist, key) in track.artists" v-bind:key="key">
-                      <a :href="'/' + artist.name">
+                      <a
+                        href="#"
+                        @click="
+                          $router.push({
+                            path: '/' + artist.name,
+                          })
+                        "
+                      >
                         {{ artist.name
                         }}<span v-if="artist.jp_name"
                           >/{{ artist.jp_name }}</span

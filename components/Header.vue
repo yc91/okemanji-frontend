@@ -52,16 +52,36 @@
         <div class="uk-offcanvas-bar">
           <ul class="uk-nav">
             <li>
-              <a class="uk-text-large" href="/">Home</a>
+              <a
+                class="uk-text-large"
+                href="#"
+                @click="$router.push({ path: '/' })"
+                >Home</a
+              >
             </li>
             <li>
-              <a class="uk-text-large" href="/artists">Artists</a>
+              <a
+                class="uk-text-large"
+                href="#"
+                @click="$router.push({ path: '/artists' })"
+                >Artists</a
+              >
             </li>
             <li>
-              <a class="uk-text-large" href="/albums">Albums</a>
+              <a
+                class="uk-text-large"
+                href="#"
+                @click="$router.push({ path: '/albums' })"
+                >Albums</a
+              >
             </li>
             <li>
-              <a class="uk-text-large" href="/tracks">Tracks</a>
+              <a
+                class="uk-text-large"
+                href="#"
+                @click="$router.push({ path: '/tracks' })"
+                >Tracks</a
+              >
             </li>
           </ul>
         </div>
