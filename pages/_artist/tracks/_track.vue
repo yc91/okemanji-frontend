@@ -10,6 +10,7 @@
             <div class="uk-width-expand">
               <h3 class="uk-card-title uk-margin-remove-bottom">
                 {{ tracks[0].title }}
+                <span v-if="tracks[0].jp_title">/{{ tracks[0].jp_title }}</span>
               </h3>
               <p
                 class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom uk-link"

@@ -1,12 +1,13 @@
-query Album{
-    albums{
-    	name
-        image{
-            url
-        },
-        artists{
-	    	name
-	    	jp_name
-    	}
+query Album {
+  albums {
+    name
+    jp_name
+    image {
+      url
     }
+    artists {
+      name
+      jp_name
+    }
+  }
 }

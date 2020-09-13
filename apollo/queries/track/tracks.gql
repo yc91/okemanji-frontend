@@ -1,9 +1,10 @@
 query {
-  tracks {
-    title
-    artists{
-    	name
-    	jp_name
-    }
-  }
+	tracks {
+		title
+		jp_title
+		artists {
+			name
+			jp_name
+		}
+	}
 }

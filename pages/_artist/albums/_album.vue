@@ -12,7 +12,10 @@
           </div>
           <div>
             <div class="uk-card-body">
-              <h3 class="uk-card-title">{{ albums[0].name }}</h3>
+              <h3 class="uk-card-title">
+                {{ albums[0].name }}
+                <span v-if="albums[0].jp_name">/{{ albums[0].jp_name }}</span>
+              </h3>
               <a
                 class="uk-text-meta uk-link"
                 href="#"

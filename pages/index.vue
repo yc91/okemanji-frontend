@@ -71,7 +71,10 @@
                             track.title,
                         })
                       "
-                      >{{ track.title }}</a
+                      >{{ track.title
+                      }}<span v-if="track.jp_title"
+                        >/{{ track.jp_title }}</span
+                      ></a
                     >
                   </td>
                   <td>

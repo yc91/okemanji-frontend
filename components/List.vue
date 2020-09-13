@@ -25,6 +25,7 @@
             @click="navigateTo(data)"
           >
             {{ data.title }}
+            <span v-if="data.jp_title">/{{ data.jp_title }}</span>
           </h3>
           <h3
             class="uk-card-title uk-inline uk-link"
@@ -72,6 +73,7 @@ export default {
             {
               tracks {
                 title
+                jp_title
                 artists {
                   name
                   jp_name
@@ -96,6 +98,7 @@ export default {
             {
               albums {
                 name
+                jp_name
                 image {
                   url
                 }

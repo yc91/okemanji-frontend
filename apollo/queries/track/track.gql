@@ -1,6 +1,7 @@
 query Tracks($title: String!, $name: String!) {
   tracks(where: { title: $title, artists: { name: $name } }) {
     title
+    jp_title
     eng_lyrics
     romaji_lyrics
     jp_lyrics

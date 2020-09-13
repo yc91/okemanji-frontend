@@ -1,9 +1,10 @@
 query {
-  tracks(limit:10, sort: "id:desc"){
-    title
-    artists{
-    	name
-    	jp_name
-    }
-  }
+	tracks(limit: 10, sort: "id:desc") {
+		title
+		jp_title
+		artists {
+			name
+			jp_name
+		}
+	}
 }
